@@ -106,25 +106,29 @@ class DataGouvScrapper
       return dataset
   end
 
-  def run
+  def get_organization_dataset(organization_name)
     data = []
-    organization = get_page_content_from_url(get_url_from_organization(@organization));
+    organization = get_page_content_from_url(get_url_from_organization(organization_name));
     datasets = organization['result']['packages']
 
     i = 0
     datasets.each do |d|
       i=i+1
-      break if i >3
-      #
+      # break if i >3
       puts "Downloading #{d['title']}"
       data << get_dataset_details(d['name'])
     end
 
+    return JSON.pretty_generate(data);
+  end
+
+  def run
+    data = get_organization_dataset(@organization)
     puts "Generating #{@organization}.json"
-    puts JSON.pretty_generate(data);
 		File.open("#{@organization}.json", "w") do |file|
-			file.write(JSON.pretty_generate(data))
+			file.write(data)
 		end
+    puts data
   end
 
 
