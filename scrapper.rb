@@ -22,6 +22,10 @@ class DataGouvScrapper
     "#{@base_url}package_show?id=#{dataset}"
   end
 
+  def get_url_from_related(dataset)
+    "#{@base_url}related_list?id=#{dataset}"
+  end
+
   def get_page_content_from_url(url)
     JSON.parse(Curl.get(url).body_str)
   end
@@ -61,25 +65,31 @@ class DataGouvScrapper
     return resources
   end
 
-  def run
-    data = []
-    organization = get_page_content_from_url(get_url_from_organization(@organization));
-    datasets = organization['result']['packages']
-
-    # i = 0
-    datasets.each do |d|
-      # i=i+1
-      # break if i >3
-
-      dataset = {
-        'name' => d['name'],
-        'notes' => d['notes'],
-        'title' => d['title']
+  def get_related_from_dataset(dataset)
+    related_list = get_page_content_from_url(get_url_from_related(dataset['result']['name']))
+    return [] if (!related_list['result'])
+    final = []
+    related_list['result'].each do |r|
+      related = {
+        'description' => r['description'],
+        'title' => r['title'],
+        'url' => r['url'],
+        'created' => r['created'],
+        'type' => r['type'],
+        'image_url' => r['image_url']
       }
-      
-      puts "Downloading #{d['title']}"
-      dataset_detail = get_page_content_from_url(get_url_from_dataset(d['name']))
+      final << related
+    end
+    return final
+  end
 
+  def get_dataset_details(dataset_name)
+      dataset = {}
+      dataset_detail = get_page_content_from_url(get_url_from_dataset(dataset_name))
+
+      dataset['name'] = dataset_detail['result']['name']
+      dataset['notes'] = dataset_detail['result']['notes']
+      dataset['title'] = dataset_detail['result']['title']
       dataset['territorial_coverage'] = dataset_detail['result']['territorial_coverage']
       dataset['territorial_coverage_granularity'] = dataset_detail['result']['territorial_coverage_granularity']
       dataset['temporal_coverage_from'] = dataset_detail['result']['temporal_coverage_from']
@@ -91,11 +101,27 @@ class DataGouvScrapper
       dataset['tags'] = get_tags_from_dataset(dataset_detail)
       dataset['groups'] = get_groups_from_dataset(dataset_detail)
       dataset['resources'] = get_resources_from_dataset(dataset_detail)
+      dataset['related'] = get_related_from_dataset(dataset_detail)
 
-      data << dataset
+      return dataset
+  end
+
+  def run
+    data = []
+    organization = get_page_content_from_url(get_url_from_organization(@organization));
+    datasets = organization['result']['packages']
+
+    i = 0
+    datasets.each do |d|
+      i=i+1
+      break if i >3
+      #
+      puts "Downloading #{d['title']}"
+      data << get_dataset_details(d['name'])
     end
 
     puts "Generating #{@organization}.json"
+    puts JSON.pretty_generate(data);
 		File.open("#{@organization}.json", "w") do |file|
 			file.write(JSON.pretty_generate(data))
 		end
