@@ -1,29 +1,31 @@
 # encoding : utf-8
 require 'curb'
 require 'json'
-# Loop sur packages
-# télécharge le package
-# loop sur ressources
-# loop sur related_list
-
+require 'csv'
 
 class DataGouvScrapper
 
   def initialize(*args)
     @organization = args[0];
     @base_url = "http://www.data.gouv.fr/api/3/action/"
+    @public_url = "http://www.data.gouv.fr/fr/"
   end
 
   def get_url_from_organization(organization)
     "#{@base_url}organization_show?id=#{organization}"
   end
 
-  def get_url_from_dataset(dataset)
-    "#{@base_url}package_show?id=#{dataset}"
+  def get_url_from_dataset_name(dataset_name)
+    "#{@base_url}package_show?id=#{dataset_name}"
   end
 
-  def get_url_from_related(dataset)
-    "#{@base_url}related_list?id=#{dataset}"
+  def get_related_url_from_dataset_name(dataset_name)
+    "#{@base_url}related_list?id=#{dataset_name}"
+  end
+
+  def get_public_url_from_dataset_name(dataset_name)
+    "#{@public_url}dataset/#{dataset_name}"
+
   end
 
   def get_page_content_from_url(url)
@@ -66,7 +68,7 @@ class DataGouvScrapper
   end
 
   def get_related_from_dataset(dataset)
-    related_list = get_page_content_from_url(get_url_from_related(dataset['result']['name']))
+    related_list = get_page_content_from_url(get_related_url_from_dataset_name(dataset['result']['name']))
     return [] if (!related_list['result'])
     final = []
     related_list['result'].each do |r|
@@ -83,9 +85,9 @@ class DataGouvScrapper
     return final
   end
 
-  def get_dataset_details(dataset_name)
+  def get_dataset_details_from_dataset_name(dataset_name)
       dataset = {}
-      dataset_detail = get_page_content_from_url(get_url_from_dataset(dataset_name))
+      dataset_detail = get_page_content_from_url(get_url_from_dataset_name(dataset_name))
 
       dataset['name'] = dataset_detail['result']['name']
       dataset['notes'] = dataset_detail['result']['notes']
@@ -116,18 +118,89 @@ class DataGouvScrapper
       i=i+1
       # break if i >3
       puts "Downloading #{d['title']}"
-      data << get_dataset_details(d['name'])
+      data << get_dataset_details_from_dataset_name(d['name'])
     end
 
-    return JSON.pretty_generate(data);
+
+    return data
   end
+
+  def generate_json_file(data)
+		File.open("#{@organization}.json", "w") do |file|
+			file.write(JSON.pretty_generate(data))
+		end
+  end
+
+
+  def get_files_for_csv_from_dataset(dataset)
+    files = []
+    dataset['resources'].each do |resource|
+      files << "#{resource['name']}\n#{resource['format']}: #{resource['url']}"
+    end
+    files.join("\n\n")
+  end
+
+
+
+
+
+  def generate_csv_file(data)
+    headers = [
+      'id',
+      'nom',
+      'description',
+      'url publique',
+      'url API',
+      'fichiers',
+      'indicateur qualité',
+      'qualité',
+      'service producteur',
+      'nombre réutilisation',
+      'tags',
+      'groups',
+      'territorial coverage',
+      'territorial coverage granularity',
+      'temporal_coverage_from',
+      'temporal_coverage_to',
+      'license',
+      'revision'
+    ]
+    p data
+
+    CSV.open("#{@organization}.csv", "wb") do |file|
+      file << headers
+      data.each do |dataset|
+        file << [
+          dataset['name'],
+          dataset['title'],
+          dataset['notes'],
+          get_public_url_from_dataset_name(dataset['name']),
+          get_url_from_dataset_name(dataset['name']),
+          get_files_for_csv_from_dataset(dataset),
+          '',
+          nil,
+          nil,
+          dataset['related'].size,
+          dataset['tags'].join(', '),
+          dataset['groups'].join(', '),
+          dataset['territorial_coverage'],
+          dataset['territorial_coverage_granularity'],
+          dataset['temporal_coverage_from'],
+          dataset['temporal_coverage_to'],
+          "#{dataset['license_title']} / #{dataset['license_url']}",
+          dataset['revision_timestamp']
+        ]
+      end
+    end
+  end
+
+
 
   def run
     data = get_organization_dataset(@organization)
     puts "Generating #{@organization}.json"
-		File.open("#{@organization}.json", "w") do |file|
-			file.write(data)
-		end
+    generate_json_file(data)
+    generate_csv_file(data)
     puts data
   end
 
