@@ -1,0 +1,1882 @@
+[
+  {
+    "name": "les-polices-municipales-par-commune",
+    "notes": "Le fichier recense pour l'année 2012 les communes de votre département ayant un service de police municipale et contient :\r\n\r\n- le nombre de policiers municipaux,\r\n- le nombre d'agents de surveillance de la voie publique,\r\n- le nombre de gardes-champêtres,\r\n- le nombre de centres de supervision urbaine (CSU).\r\n\r\nLes polices municipales sont régies par le code général des collectivités territoriales, le code de procédure pénale et le livre V du code de la sécurité intérieure, qui ont défini leur organisation et leur fonctionnement. Placés sous l’autorité des maires, les agents de police municipale disposent de compétences de police administrative et de certaines compétences de police judiciaire définies par la loi, qu’ils exercent sous le contrôle du procureur de la République.\r\n\r\n\r\n\r\n![Explorer Data.gouv.fr](http://i.imgur.com/ssKfqQL.png?2 \"Explorer Data.gouv.fr\")\r\n**Découvrez en bas de cette page les contributions de la communauté data.gouv.fr en lien avec ce jeu de données **\r\n\r\n ",
+    "title": "Les polices municipales par commune",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": "commune",
+    "temporal_coverage_from": "2012-01-01",
+    "temporal_coverage_to": "2012-01-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2014-02-17T18:25:59.885624",
+    "tags": [
+      "2012",
+      "communes",
+      "dlpaj",
+      "polices municipales"
+    ],
+    "groups": [
+      "territoires-et-transports"
+    ],
+    "resources": [
+      {
+        "created": "2014-01-16T18:32:07.468213",
+        "revision_timestamp": "2014-02-17T16:53:14.386956",
+        "name": "Données statistiques relatives aux polices municipales - année 2012",
+        "description": "Données statistiques relatives aux polices municipales par commune pour l'année 2012",
+        "format": "XLS",
+        "url": "https://www.data.gouv.fr/storage/f/2014-01-16T18-34-21/police_municipale_donnees_2012%20.xls"
+      }
+    ],
+    "related": [
+      {
+        "description": "Cartographie communale des services de police municipale : policiers municipaux, agents de surveillance de la voie publique (ASVP), gardes champêtres, centres de supervision urbaine (CSU). \r\nCartographie réalisée dans [France découverte](http://franceo3.geoclip.fr/), à partir d'un fichier tjs.",
+        "title": "Services de police municipale par commune",
+        "url": "http://franceo3.geoclip.fr/index.php?tjs_file=http://www.geoclip.fr/open_data/tjs_police_municipale_com.xml#l=fr;v=map6",
+        "created": "2014-01-27T12:02:13.359009",
+        "type": "visualization",
+        "image_url": "http://www.geoclip.fr/open_data/map_gardeschampetres.jpg"
+      },
+      {
+        "description": "Cartographie départementale des effectifs de police municipale : policiers municipaux + agents de surveillance de la voie publique + gardes champêtres, rapportés à la population (taux pour 10 000 hab.)\r\nLe fichier d'origine contient des données par communes, mais le code géographique communal est absent et les libellés des noms des communes ne sont pas normalisés. Le fichier est en outre incomplet : pas de données pour la Ville de Paris par exemple.\r\nCartographie réalisée dans [France découverte](http://franceo3.geoclip.fr/), à partir d'un fichier tjs.",
+        "title": "Personnels des polices municipales : taux pour 10 000 habitants par département",
+        "url": "http://franceo3.geoclip.fr/index.php?tjs_file=http://www.geoclip.fr/open_data/tjs_police_municipale_dep.xml#l=fr;v=map6",
+        "created": "2014-01-24T10:32:10.714487",
+        "type": "visualization",
+        "image_url": "http://www.geoclip.fr/open_data/map_policemunicipale.jpg"
+      },
+      {
+        "description": "Analyse du nombre de policiers municipaux, ASVP, gardes champêtres et CSU par département et par commune",
+        "title": "Polices municipales - 2012 / Graphique interactif",
+        "url": "http://public.opendatasoft.com/explore/dataset/polices-municipales-20120/?tab=analyze&dataChart=eyJ0aW1lc2NhbGUiOiIiLCJxdWVyaWVzIjpbeyJjb25maWciOnsiZGF0YXNldCI6InBvbGljZXMtbXVuaWNpcGFsZXMtMjAxMjAiLCJvcHRpb25zIjp7InRhYiI6ImFuYWx5emUifX0sInhBeGlzIjoiZGVwYXJ0ZW1lbnQiLCJzb3J0Ijoic2VyaWUyIiwibWF4cG9pbnRzIjoyMCwiY2hhcnRzIjpbeyJ5QXhpcyI6Im5vbWJyZV9kX2FnZW50c19kZV9zdXJ2ZWlsbGFuY2VfZGVfbGFfdm9pZV9wdWJsaXF1ZSIsInlMYWJlbCI6IlNvbW1lIE5vbWJyZSBkJ0FTVlAgKEFnZW50cyBkZSBTdXJ2ZWlsbGFuY2UgZGUgbGEgVm9pZSBQdWJsaXF1ZSkiLCJmdW5jIjoiU1VNIiwiY29sb3IiOiIjNTE5OEVBIiwidHlwZSI6ImNvbHVtbiIsImV4dHJhcyI6e319LHsieUF4aXMiOiJub21icmVfZGVfcG9saWNpZXJzX211bmljaXBhdXgiLCJ5TGFiZWwiOiJTb21tZSBOb21icmUgZGUgcG9saWNpZXJzIG11bmljaXBhdXgiLCJmdW5jIjoiU1VNIiwiY29sb3IiOiIjMmE0ZGJmIiwidHlwZSI6ImNvbHVtbiIsImV4dHJhcyI6e319LHsieUF4aXMiOiJub21icmVfZGVfZ2FyZGVzX2NoYW1wZXRyZXMiLCJ5TGFiZWwiOiJTb21tZSBOb21icmUgZGUgZ2FyZGVzIGNoYW1w6nRyZXMiLCJmdW5jIjoiU1VNIiwiY29sb3IiOiIjOGJiYzIxIiwidHlwZSI6ImNvbHVtbiIsImV4dHJhcyI6e319LHsieUF4aXMiOiJub21icmVfZGVfY2VudHJlc19kZV9zdXBlcnZpc2lvbl91cmJhaW5lX2NzdSIsInlMYWJlbCI6IlNvbW1lIE5vbWJyZSBkZSBDU1UgKENlbnRyZXMgZGUgc3VwZXJ2aXNpb24gdXJiYWluZSkiLCJmdW5jIjoiU1VNIiwiY29sb3IiOiIjQzBDNEMzIiwidHlwZSI6ImNvbHVtbiIsImV4dHJhcyI6e319XX1dLCJ4TGFiZWwiOiJE6XBhcnRlbWVudCJ9",
+        "created": "2014-01-23T15:02:42.501368",
+        "type": "visualization",
+        "image_url": "http://i.imgur.com/g3eB7kz.png"
+      },
+      {
+        "description": "Localisation des policiers municipaux, ASVP, gardes champêtres et CSU",
+        "title": "Carte interactive des polices municipales - 2012",
+        "url": "http://public.opendatasoft.com/explore/dataset/polices-municipales-20120/?tab=map",
+        "created": "2014-01-23T14:57:01.903588",
+        "type": "visualization",
+        "image_url": "http://i.imgur.com/4LiBSpU.png"
+      },
+      {
+        "description": "*« Le gouvernement a rendu public le 16 janvier 2014, pour la première fois, le nombre de policiers municipaux, ville par ville. En se basant sur ces données datées de 2012, le Club prévention sécurité vous propose, en exclusivité de visualiser la répartition des effectifs et de découvrir le classement des 100 premières \"PM\" de France. Carte et tableaux à l'appui. »*\r\n\r\nArticle payant sur [La Gazette des communes](http://www.lagazettedescommunes.com/180120/decouvrez-la-carte-de-france-des-villes-sous-videosurveillance/) avec en complément deux classements top 100 des plus grosses PM et plus grosses PM dans les villes de plus de 10 000 habitants. ",
+        "title": "Le classement des 100 premières polices municipales de France",
+        "url": "https://www.google.com/fusiontables/DataSource?docid=1xvJwLapFYwAzTMAfGyVrHgNXWukY5VI7UUwUfn4#map:id=3",
+        "created": "2014-01-20T20:51:13.142672",
+        "type": "news_article",
+        "image_url": "http://www.lagazettedescommunes.com/wp-content/themes/gazette_v3.0/thumb.php?src=http://www.lagazettedescommunes.com/wp-content/uploads/carte-UNE.jpg&w=170&h=114&zc=1"
+      }
+    ]
+  },
+  {
+    "name": "barometre-du-3eme-trimestre-2011-30379504",
+    "notes": "Baromètre des mois de Juillet, Août et Septembre 2011",
+    "title": "Baromètre du 3ème trimestre 2011",
+    "territorial_coverage": "MetropoleOfCountry/FR/FRANCE METROPOLITAINE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2011-07-01",
+    "temporal_coverage_to": "2011-10-01",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:52:16.131757",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2011-12-05T00:00:00",
+        "revision_timestamp": "2014-01-06T08:51:02.106457",
+        "name": null,
+        "description": "",
+        "format": "PDF",
+        "url": "http://static.data.gouv.fr/27/d8dc4dde682514090bded608e2f683242ab8922d9d458a8aa4889e773338d3.pdf"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "barometre-mensuel-de-l-accidentalite-octobre-2011-30379748",
+    "notes": "Ce document présente les données de l'accidentalité (accidents corporels, personnes tuées à 30 jours, personnes blessées dont hospitalisées) du mois à partir d'un dispositif de remontées rapides de ces informations assurées en fin de mois par les forces de l'ordre.",
+    "title": "Baromètre mensuel de l'accidentalité : Octobre 2011",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2011-10-01",
+    "temporal_coverage_to": "2011-10-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:47:30.304537",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2011-12-05T00:00:00",
+        "revision_timestamp": "2014-01-06T09:34:37.061470",
+        "name": null,
+        "description": "",
+        "format": "PDF",
+        "url": "http://static.data.gouv.fr/5f/35b2c2b55788d2d31fd63d014857549daf88c6994e271b82bc56597bdc397c.pdf"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "evolution-des-nationalites-des-porteurs-de-faux-documents",
+    "notes": "Immigration irrégulière : La lutte contre les fraudes à l'identité et à la fraude documentaire (Les orientations de la politique de l’immigration)",
+    "title": "Evolution des nationalités des porteurs de faux documents",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": "",
+    "temporal_coverage_from": "2010-01-01",
+    "temporal_coverage_to": "2011-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-12-03T15:22:12.577798",
+    "tags": [
+      "évolution"
+    ],
+    "groups": [
+
+    ],
+    "resources": [
+      {
+        "created": "2013-12-03T16:20:17.780186",
+        "revision_timestamp": "2014-01-06T09:35:12.478430",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/d4/3dfe0ee5a23150a0030b9de58cf094f770fe8a4a8bc1ab13db21dc14700d11.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "videoprotection-implantation-des-cameras-551635-fork-ce76b5",
+    "notes": "Implantation des caméras prévues par le plan de vidéoprotection pour Paris (été 2012).200 caméras sont opérationnelles pour la mise en service de la première tranche du projet le 21 décembre 2011. 1105 caméras seront opérationnelles pour la livraison globale du système PVPP prévue à l'été 2012",
+    "title": "Vidéoprotection - Implantation des caméras",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": "",
+    "temporal_coverage_from": "2011-12-21",
+    "temporal_coverage_to": "2012-08-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-12-03T15:09:47.591468",
+    "tags": [
+      "dispositif-de-securite",
+      "police",
+      "securite-publique",
+      "surveillance",
+      "videosurveillance"
+    ],
+    "groups": [
+
+    ],
+    "resources": [
+      {
+        "created": "2013-12-03T16:08:47.313609",
+        "revision_timestamp": "2014-01-06T09:01:58.728118",
+        "name": null,
+        "description": "",
+        "format": "shp",
+        "url": "http://static.data.gouv.fr/15/d13db394caa77f69785db8a4862a5ad27dd0561e7c80cbf24adfab4e2232e8.zip"
+      },
+      {
+        "created": "2013-12-03T16:08:47.313628",
+        "revision_timestamp": "2014-01-06T09:01:58.728118",
+        "name": "Télécharger Vidéoprotection - Implantation des caméras - pdf",
+        "description": "",
+        "format": "",
+        "url": "http://static.data.gouv.fr/a1/1f350e1e24f4729035ac5d8d5db4d6aa0e82a1e0d0ffdd0c2566439f411f59.zip"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "elections-europeennes-2009-resultats-571329",
+    "notes": "Résultats des élections européennes de 2009 par communes pour les départements 01 à 49",
+    "title": "Elections européennes 2009 - Résultats",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2012-11-23",
+    "temporal_coverage_to": "2012-11-23",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-04T15:09:09.714192",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-11-23T00:00:00",
+        "revision_timestamp": "2014-01-06T08:46:06.661940",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/23/6f086ac5c360ef6670820691b9ec33d03db5c26855491a360646c245b50bca.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "elections-senatoriales-2001-resultats-572098",
+    "notes": "Résultats des élections sénatoriales de 2001, scrutin majoritaire, tours 1 et 2, scrutin proportionnel et liste des élus",
+    "title": "Elections sénatoriales 2001 – Résultats",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2001-09-23",
+    "temporal_coverage_to": "2001-09-23",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:49:59.802772",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2013-03-18T00:00:00",
+        "revision_timestamp": "2014-01-06T09:27:10.596917",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/47/a29bd3dafe3ce3dd2fe8767e1a41085affa6b24d0059a3089d4881ced64892.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "elections-legislatives-2007-resultats-572071",
+    "notes": "Résultats des élections législatives de 2007, tours 1 et 2,  par régions, départements, circonscriptions législatives, cantons et liste des élus à l’issue de l’élection",
+    "title": "Elections législatives 2007 – Résultats",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2007-06-10",
+    "temporal_coverage_to": "2007-06-17",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:45:51.619017",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2013-03-12T00:00:00",
+        "revision_timestamp": "2014-01-06T08:30:27.372941",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/21/0c89caeccc170effac852b1ffa2e3b318827fa7b0fd418c92b66ed8f986aef.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "elections-legislatives-2007-resultats-572075",
+    "notes": "Résultats des élections législatives de 2007, tour 2,  par communes",
+    "title": "Elections législatives 2007 – Résultats",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2007-06-10",
+    "temporal_coverage_to": "2007-06-17",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:45:59.468437",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2013-03-12T00:00:00",
+        "revision_timestamp": "2014-01-06T10:46:06.197735",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/8b/ef74da610af0f2850d5e2917a6ff88d4c6635d5bf6409f8d8b20cea1080fb9.xls"
+      }
+    ],
+    "related": [
+      {
+        "description": "Cartographie interactive des résultats des élections législatives de 2007, 1er et 2nd tour depuis le niveau communal jusqu'au niveau régional",
+        "title": "Cartographie nationale des résultats des élections législatives de 2007",
+        "url": "http://franceo3.geoclip.fr/index.php?profil=FV&theme=xd_leg2007#v=map12;l=fr",
+        "created": "2014-01-07T17:22:43.208900",
+        "type": "visualization",
+        "image_url": "http://static.data.gouv.fr/45/2f004a5c2636c5fdd3bc3c35a0c529ca416862b9037191c852e44440f74031.png"
+      }
+    ]
+  },
+  {
+    "name": "elections-senatoriales-1998-resultats-572096",
+    "notes": "Résultats des élections sénatoriales de 1998, scrutin majoritaire, tours 1 et 2, scrutin proportionnel et liste des élus",
+    "title": "Elections sénatoriales 1998 – Résultats",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "1998-01-01",
+    "temporal_coverage_to": "1998-01-01",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-04T15:08:52.083572",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2013-03-14T00:00:00",
+        "revision_timestamp": "2014-01-06T10:43:13.809263",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/47/da7da33b9521ab16c8bc28e9d615bd5cac54f7dcc1f8c35e4d5b396c6ab353.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "referendum-de-1992-571465",
+    "notes": "Résultats du référendum de 1992 par régions, départements, circonscriptions législatives et cantons",
+    "title": "Référendum de 1992",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "1992-09-20",
+    "temporal_coverage_to": "1992-09-20",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-04T15:09:45.009238",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2013-01-08T00:00:00",
+        "revision_timestamp": "2014-01-06T09:21:28.205450",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/c6/cab108ed297b9c87bd77b76db521b30e226d46d36579ee5e709751aba37846.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "elections-legislatives-2007-resultats-572073",
+    "notes": "Résultats des élections législatives de 2007, tour 1,  par communes",
+    "title": "Elections législatives 2007 – Résultats",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2007-06-10",
+    "temporal_coverage_to": "2007-06-17",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:45:54.353890",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2013-03-12T00:00:00",
+        "revision_timestamp": "2014-01-06T09:44:39.686481",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/02/f2582a43be34cc1975fa364568d6e39d75c647fb50dcc4b4bd19d3321d16e0.xls"
+      }
+    ],
+    "related": [
+      {
+        "description": "Cartographie interactive des résultats des élections législatives de 2007, 1er et 2nd tour depuis le niveau communal jusqu'au niveau régional",
+        "title": "Cartographie nationale des résultats des élections législatives de 2007",
+        "url": "http://franceo3.geoclip.fr/index.php?profil=FV&theme=xd_leg2007#v=map12;l=fr",
+        "created": "2014-01-07T17:25:52.796100",
+        "type": "visualization",
+        "image_url": "http://static.data.gouv.fr/2f/eea4fbc5f275db0284f475fe1c2e8f05644500ed79e15bdc1ce04c2a3832f0.png"
+      }
+    ]
+  },
+  {
+    "name": "elections-europeennes-2009-resultats-571327",
+    "notes": "Résultats des élections européennes de 2009 par circonscriptions européennes, régions, départements, circonscriptions législatives et cantons",
+    "title": "Elections européennes 2009 - Résultats",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2012-11-23",
+    "temporal_coverage_to": "2012-11-23",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-04T14:51:15.635350",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-11-23T00:00:00",
+        "revision_timestamp": "2014-01-06T08:41:34.462198",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/e0/88c770f067e9bc4cfd3dea656aa69b15add243c1c4c367a85d7314e74fde63.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "elections-municipales-2001-resultats-572156",
+    "notes": "Résultats des élections municipales de 2001, tours 1 et 2, pour les communes de plus de 3 500 habitants (scrutin de liste et déclaration de candidature obligatoire)",
+    "title": "Elections municipales 2001 – Résultats",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2001-03-11",
+    "temporal_coverage_to": "2001-03-18",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:49:36.809074",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2013-03-26T00:00:00",
+        "revision_timestamp": "2014-01-06T09:20:07.078886",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/a8/7ed1963602a96808a3795400346086fb22e940ee1f1b87d0e8cd189fe6d12b.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "elections-cantonales-2004-resultats-572045",
+    "notes": "Résultats des élections cantonales de 2004, tours 1 et 2,  par régions, départements, circonscriptions législatives, cantons et liste des élus à l’issue de l’élection",
+    "title": "Elections cantonales 2004 – Résultats",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2004-03-21",
+    "temporal_coverage_to": "2004-03-28",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:58:18.072610",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2013-03-12T00:00:00",
+        "revision_timestamp": "2014-01-06T10:26:42.030788",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/24/3e463e02def1d6b581092bf8c02783222832b4c2c2094cb2c23136ca10b350.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "elections-cantonales-2004-resultats-572047",
+    "notes": "Résultats des élections cantonales de 2004, tours 1 et 2,  par communes",
+    "title": "Elections cantonales 2004 – Résultats",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2004-03-21",
+    "temporal_coverage_to": "2004-03-28",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:58:12.858897",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2013-03-12T00:00:00",
+        "revision_timestamp": "2014-01-06T09:03:58.152141",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/9b/5859d129bf0b560f54ef924b7a3a1389c7fc5d0883053841cfd28ade356f56.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "comportement-des-usagers-de-la-route-annee-2009-30379529",
+    "notes": "Comportement des usagers de la route - année 2009 (détail du nombre des infractions par délits et contraventions, par infractions et famille d'infractions et tableau récapitulatif)",
+    "title": "Comportement des usagers de la route - année 2009",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2009-01-01",
+    "temporal_coverage_to": "2009-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T10:05:24.866316",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2011-12-05T00:00:00",
+        "revision_timestamp": "2014-01-06T09:03:24.624714",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/d0/7797fdd3448d5e0bd26b7ab54c6e0221ee3de43779a27d6ff63dede4d8f610.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "permis-a-points-annee-2009-30379877",
+    "notes": "Données nationales (synthèse générale) et départementales sur le permis à points (Nombre et évolution de chacune des infractions pour l'année 2009, nombre des infractions par famille d'infractions, nombre d'infractions entraînant un retrait de points, nombre de points retirés, nombre de permis invalidés pour solde de points nul, permis probatoires invalidés pour solde de points nul, nombre des permis au capital de points reconstitué)",
+    "title": "Permis à points - année 2009",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2009-01-01",
+    "temporal_coverage_to": "2009-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:55:45.980593",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2011-12-05T00:00:00",
+        "revision_timestamp": "2014-01-06T10:39:16.946827",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/45/150e8fac21d143b060628f6fff6579cfe3d506085e93e6e76710209d00553b.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "liste-des-points-d-accueil-de-la-gendarmerie-nationale",
+    "notes": "Fichier d'export sur les unités de gendarmerie accueillant du public. Chaque unité a : Le nom de l'unité,  La localité de l'unité, Le numéro de téléphone de l'unité, Le numéro de faxe de l'unité, L'adresse postale de l'unité et L'adresse géographique de l'unité ",
+    "title": "Liste des points d'accueil de la gendarmerie nationale",
+    "territorial_coverage": "country/fr/france",
+    "territorial_coverage_granularity": "commune",
+    "temporal_coverage_from": "2014-01-01",
+    "temporal_coverage_to": "2014-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-11-28T15:04:18.776488",
+    "tags": [
+      "accueil",
+      "accueil-de-jour",
+      "accueil-du-public",
+      "adresse",
+      "fichier-unite",
+      "gendarmerie",
+      "gendarmerie-nationale",
+      "geocodage",
+      "gn",
+      "obligations-de-service-public",
+      "point-geographique",
+      "stsisi",
+      "unite"
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2014-01-14T09:53:37.671926",
+        "revision_timestamp": "2014-01-14T14:20:27.558767",
+        "name": "Liste-des-unites-gendarmerie-geocodees.csv",
+        "description": "Liste des unités de gendarmerie qui accueillent du public avec les coordonnées X Y",
+        "format": "CSV",
+        "url": "https://www.data.gouv.fr/storage/f/2014-01-14T15-04-52/Export_gendarmerie_geocodes.csv"
+      }
+    ],
+    "related": [
+      {
+        "description": "Carte de localisation des points d’accueil de la gendarmerie nationale en France en 2013",
+        "title": "Carte de localisation des points d'accueil de la gendarmerie nationale",
+        "url": "http://franceo3.geoclip.fr/index.php?tjs_file=http://geoclip.fr/o3/data/tjs_gendarmeries.xml#v=map12;l=fr",
+        "created": "2014-01-09T13:20:41.698583",
+        "type": "visualization",
+        "image_url": "http://static.data.gouv.fr/f4/680509bbd7f81da7e74b4499c23a86deeb7121424488534fcc1f2be7403f4e.png"
+      }
+    ]
+  },
+  {
+    "name": "points-d-accueil-police-coordonnees-petite-couronne-30379776",
+    "notes": "Liste des points d'accueil police pour les départements de petite couronne (92, 93, 94) répertoriant par district les services, adresses, téléphones, horaires",
+    "title": "Points d'accueil police (coordonnées) - Petite couronne",
+    "territorial_coverage": "DepartmentOfFrance/92/92 HAUTS DE SEINE,DepartmentOfFrance/93/93 SEINE ST DENIS,DepartmentOfFrance/94/94 VAL DE MARNE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2011-01-01",
+    "temporal_coverage_to": "2011-01-01",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:50:59.103788",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-03T00:00:00",
+        "revision_timestamp": "2014-01-06T09:00:23.057435",
+        "name": null,
+        "description": "",
+        "format": "CSV",
+        "url": "http://static.data.gouv.fr/a2/5abb8f8089c261e1cac869a2e7cc49e65eaa69643969a55a8f92bef325f985.csv"
+      },
+      {
+        "created": "2012-04-03T00:00:00",
+        "revision_timestamp": "2014-01-06T09:00:54.784592",
+        "name": "Télécharger Cartographie des emplacements des commissariats à Paris et petite couronne",
+        "description": "",
+        "format": "",
+        "url": "http://static.data.gouv.fr/fd/f80a270717becba99a32317439a9d077091a431ac8e62f0c62a129a1fa9765.kml"
+      }
+    ],
+    "related": [
+      {
+        "description": "Les points d'accueil de la police et de gendarmerie comprennent les commissariats et les antennes de police.Ils permettent de déposer les plaintes et d'accomplir certaines démarches administratives. Les points d'accueil de police sont généralement situés en ville et les gendarmeries en zone rurale, littorale ou de montagne.",
+        "title": "Visualisation dynamique sur le Géoportail des points d'accueil Police (et Gendarmerie)",
+        "url": "http://www.geoportail.gouv.fr/accueil?c=2.2129661118392687,48.80738871787791&z=0.00027035061145184254&l=ORTHOIMAGERY.ORTHOPHOTOS::GEOPORTAIL:OGC:WMTS(1)&l=UTILITYANDGOVERNMENTALSERVICES.MININT.POI.ACCUEIL_POLICE-GENDARMERIE::GEOPORTAIL:OGC:WMS(1)&permalink=yes",
+        "created": "2013-11-17T22:53:51.999640",
+        "type": "visualization",
+        "image_url": "http://static.data.gouv.fr/39/da4e3c729b99f1b38e16d8d265204ad8e891cfd2b134a0ed0e76fde9dada69.jpg"
+      }
+    ]
+  },
+  {
+    "name": "base-de-donnees-accidents-corporels-de-la-circulation-sur-6-annees-france-entiere-2006-2011-564096",
+    "notes": "Cette base est extraite du fichier national des accidents corporels de la circulation, dit « Fichier BAAC1 », administré par l’Observatoire interministériel de la sécurité routière. Pour chaque accident corporel (soit un accident survenu sur une voie ouverte à la circulation publique, impliquant au moins un véhicule et ayant fait au moins une victime ayant nécessité des soins), les saisies d’information sont effectuées par l’unité des forces de l’ordre (police, gendarmerie, etc.) qui est intervenue sur le lieu de l’accident. \nLa base répertorie l'intégralité des accidents corporels de la circulation intervenus de 2006 à 2011 en France (4 DOM inclus, à savoir Guadeloupe, Guyane, Martinique et La Réunion), avec leur description simplifiée (plus un indice de gravité – défini plus loin). Cela inclue toutes les informations de localisation disponibles dans le Fichier BAAC, telles qu’elles y sont renseignées ainsi que les informations concernant les véhicules et leurs victimes. \n\nCette base comporte 454 372 accidents (440 695 pour la métropole et 13 677 pour les DOM) et 775 422 véhicules présents dans les accidents (751 831 pour la métropole et 23 591 pour les DOM).\n\nElle est notablement plus détaillée que la base de données 2005-2010 postée précédemment sur Etalab (à l’automne 2011).",
+    "title": "Base de données accidents corporels de la circulation sur 6 années - France entière - 2006-2011",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2006-01-01",
+    "temporal_coverage_to": "2012-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-11-23T11:01:05.674489",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-07-06T00:00:00",
+        "revision_timestamp": "2014-01-06T10:43:34.435537",
+        "name": null,
+        "description": "",
+        "format": "CSV",
+        "url": "http://static.data.gouv.fr/fe/fea60d07a33386148deed77f826e9fe6406eae855b8620aa4a16a78362196b.csv"
+      },
+      {
+        "created": "2012-07-06T00:00:00",
+        "revision_timestamp": "2014-01-06T10:43:34.435537",
+        "name": "Télécharger Description de la base de données \"accidents de la circulation\"",
+        "description": "",
+        "format": "",
+        "url": "http://static.data.gouv.fr/8d/5652b7c417304db3380a3f621a3a5fc07f13d28a68726d452d220e9ac55da0.pdf"
+      },
+      {
+        "created": "2012-07-06T00:00:00",
+        "revision_timestamp": "2014-01-06T10:43:34.435537",
+        "name": "Télécharger Base de données véhicules impliqués",
+        "description": "",
+        "format": "",
+        "url": "http://static.data.gouv.fr/e0/2c08ee9469617e399bb6bb8a540cd5348695f3abde43bb0e5833dcf70d16a6.csv"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "base-de-donnees-accidents-corporels-de-la-circulation-sur-6-annees",
+    "notes": "Cette base est extraite du fichier national des accidents corporels de la circulation, dit « Fichier BAAC1 », administré par l’Observatoire interministériel de la sécurité routière. Pour chaque accident corporel (soit un accident survenu sur une voie ouverte à la circulation publique, impliquant au moins un véhicule et ayant fait au moins une victime ayant nécessité des soins), les saisies d’information sont effectuées par l’unité des forces de l’ordre (police, gendarmerie, etc.) qui est intervenue sur le lieu de l’accident. \r\nLa base répertorie l'intégralité des accidents corporels de la circulation intervenus de 2006 à 2011 en France (4 DOM inclus, à savoir Guadeloupe, Guyane, Martinique et La Réunion), avec leur description simplifiée (plus un indice de gravité – défini plus loin). Cela inclue toutes les informations de localisation disponibles dans le Fichier BAAC, telles qu’elles y sont renseignées ainsi que les informations concernant les véhicules et leurs victimes. \r\n\r\nCette base comporte 454 372 accidents (440 695 pour la métropole et 13 677 pour les DOM) et 775 422 véhicules présents dans les accidents (751 831 pour la métropole et 23 591 pour les DOM).\r\n\r\nElle est notablement plus détaillée que la base de données 2005-2010 postée précédemment sur Etalab (à l’automne 2011).",
+    "title": "Base de données accidents corporels de la circulation sur 6 années ",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": "pays",
+    "temporal_coverage_from": "2006-01-01",
+    "temporal_coverage_to": "2011-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-11-22T10:04:26.522766",
+    "tags": [
+      "accident",
+      "circulation",
+      "circulation-routiere"
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-07-06T00:00:00",
+        "revision_timestamp": "2014-01-06T09:23:59.384996",
+        "name": null,
+        "description": "",
+        "format": "CSV",
+        "url": "http://static.data.gouv.fr/fe/fea60d07a33386148deed77f826e9fe6406eae855b8620aa4a16a78362196b.csv"
+      },
+      {
+        "created": "2012-07-06T00:00:00",
+        "revision_timestamp": "2014-01-06T09:24:02.299683",
+        "name": "Télécharger Description de la base de données \"accidents de la circulation\"",
+        "description": "",
+        "format": "",
+        "url": "http://static.data.gouv.fr/8d/5652b7c417304db3380a3f621a3a5fc07f13d28a68726d452d220e9ac55da0.pdf"
+      },
+      {
+        "created": "2012-07-06T00:00:00",
+        "revision_timestamp": "2014-01-06T09:23:59.384996",
+        "name": "Télécharger Base de données véhicules impliqués",
+        "description": "",
+        "format": "",
+        "url": "http://static.data.gouv.fr/e0/2c08ee9469617e399bb6bb8a540cd5348695f3abde43bb0e5833dcf70d16a6.csv"
+      }
+    ],
+    "related": [
+      {
+        "description": "Une baisse continue de la mortalité routière (Infoviz Le Monde.fr)",
+        "title": "Une baisse continue de la mortalité routière - Le Monde.fr",
+        "url": "http://cf.datawrapper.de/AmMAu/6/",
+        "created": "2014-02-10T11:54:22.443795",
+        "type": "visualization",
+        "image_url": "http://i.imgur.com/idp6DsP.png?1"
+      },
+      {
+        "description": "Gauche : Nombre d'accidents par département, par an, pour 1000 personne\r\nDroite : Nombre d'accidents sur 2001-2006 en % du nombre d'accidents total",
+        "title": "Comparaison entre accidents par habitant et accidents totaux",
+        "url": "https://dl.dropboxusercontent.com/u/2194909/accidents2.png",
+        "created": "2013-12-03T16:04:16.570204",
+        "type": "visualization",
+        "image_url": "http://static.data.gouv.fr/4e/262100fdc3398d52964f0614b60798324d63074d2f268d9a9ff35e405bad77.png"
+      },
+      {
+        "description": "% d'accidents par département\r\nnombre d'accidents pour 1000 personnes par département\r\nnombre total d'accidents par département",
+        "title": "Carte de France des accidents 2001-2006",
+        "url": "http://franceo3.geoclip.fr/index.php?tjs_file=https://dl.dropboxusercontent.com/u/2194909/accidents.xml",
+        "created": "2013-12-03T15:48:41.054976",
+        "type": "visualization",
+        "image_url": "http://static.data.gouv.fr/e9/62f6246e8bc02fb3e570de898795526343f54c967e00da780dc2dfbe700ef9.png"
+      },
+      {
+        "description": "Cette carte est un projet en cours. Elle n'est pour l'instant pas exhaustive. Elle s'appuie sur les données opendata mentionnant l'emplacement de tous les accidents de la route dans le Finistère de 2006 à 2011. Pour l'instant, seuls 2000 accidents sont localisés (+ ou - précisément).",
+        "title": "Accidents de la route dans le Finistère (beta)",
+        "url": "http://www.data-projet.com/carte-accident-29/",
+        "created": "2013-11-17T14:15:55.731710",
+        "type": "visualization",
+        "image_url": ""
+      }
+    ]
+  },
+  {
+    "name": "65-liste-des-pays-d-origine-surs-30379652",
+    "notes": "Asile : Activité de l'Office français de protection des réfugiés et apatrides (OFPRA) et de la Cour nationale du droit d'asile (CNDA) (Les orientations de la politique de l’immigration)",
+    "title": "65 - Liste des pays d’origine sûrs",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2011-03-11",
+    "temporal_coverage_to": "2012-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T10:05:56.358124",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-04T00:00:00",
+        "revision_timestamp": "2014-01-06T08:31:07.050673",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/6a/bd2c09f584a9f3995d765c6b85d0fedc9cded009e02029764e97c1abb58b99.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "43-arretes-prefectoraux-de-reconduite-a-la-frontiere-non-executes-30379591",
+    "notes": "Immigration irrégulière : Le séjour irrégulier sur le territoire (Les orientations de la politique de l’immigration)",
+    "title": "43 - Arrêtés préfectoraux de reconduite à la frontière non exécutés",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2006-01-01",
+    "temporal_coverage_to": "2011-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T10:00:51.909415",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-04T00:00:00",
+        "revision_timestamp": "2014-01-06T09:27:46.416772",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/30/f9a523cad348ab2bde35ac6bf1db6163de9a0ca35901f1743d1a1fdfb3cc11.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "72-structure-de-la-population-hebergee-en-cada-30379567",
+    "notes": "Asile : L'accueil et l'hébergement des demandeurs d'asile et des réfugiés (Les orientations de la politique de l’immigration)",
+    "title": "72 - Structure de la population hébergée en CADA",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2011-01-01",
+    "temporal_coverage_to": "2012-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:53:53.221404",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-04T00:00:00",
+        "revision_timestamp": "2014-01-06T10:43:00.268617",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/54/8b70051f59c3db60a481a94367e8dd24431ab9692184060548e38f908f71c1.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "39-aide-a-l-entree-irreguliere-a-la-circulation-et-au-sejour-irregulier-des-etrangers-evolu-30379602",
+    "notes": "Immigration irrégulière : Le séjour irrégulier sur le territoire (Les orientations de la politique de l’immigration)",
+    "title": "39 - Aide à l’entrée irrégulière, à la circulation et au séjour irrégulier des étrangers – Évolution de l’action des services – index 70",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2009-01-01",
+    "temporal_coverage_to": "2011-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:50:20.918239",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-04T00:00:00",
+        "revision_timestamp": "2014-01-06T08:47:38.029917",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/f1/9ac86e3f77cec3ee597d4143bfa545cd7750b3e97954f6729d5d8b95486a7b.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "42-entrees-irregulieres-enregistrees-dans-agdref-pour-les-premiers-titres-delivres-30379656",
+    "notes": "Immigration irrégulière : Le séjour irrégulier sur le territoire (Les orientations de la politique de l’immigration)",
+    "title": "42 - Entrées irrégulières enregistrées dans agdref pour les premiers titres délivrés",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2006-01-01",
+    "temporal_coverage_to": "2011-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:59:48.176742",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-04T00:00:00",
+        "revision_timestamp": "2014-01-06T09:45:56.731387",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/9e/5ad97396a596b7cb55407d40a318dcca8f7dbe7d4bb302176543f710ea4e31.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "76-repartition-des-signataires-du-cai-suivant-leur-situation-30379515",
+    "notes": "Intégration et l’acquisition de la nationalité française : Accueil et premiers pas dans la société française : le contrat d'accueil et d'intégration (Les orientations de la politique de l’immigration)",
+    "title": "76 - Répartition des signataires du CAI suivant leur situation",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2011-01-01",
+    "temporal_coverage_to": "2012-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:44:55.814830",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-04T00:00:00",
+        "revision_timestamp": "2014-01-06T09:27:12.765404",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/10/69ad5cae3c32b2d2268728b697a6f645dce356496751155aab5608eee07936.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "86-stock-de-dossiers-551542",
+    "notes": "Intégration et l’acquisition de la nationalité française : acquisition de la nationalité française (Les orientations de la politique de l’immigration)",
+    "title": "86 - Stock de dossiers",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2009-01-01",
+    "temporal_coverage_to": "2011-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T10:04:26.733060",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-05T00:00:00",
+        "revision_timestamp": "2014-01-06T10:39:00.281385",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/91/56114dd1c293032387839ef84ed292843d1c7c60f3acafb25cdf764c8dc6a7.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "69-flux-dublin-entre-la-france-et-les-etats-membres-au-titre-de-la-mise-en-oeuvre-du-reglem-30379685",
+    "notes": "Asile : Mise en oeuvre du règlement de Dublin par la France (Les orientations de la politique de l’immigration)",
+    "title": "69 - Flux Dublin entre la France et les États membres au titre de la mise en œuvre du règlement de Dublin",
+    "territorial_coverage": "InternationalOrganization/UE/UNION EUROPEENNE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2010-01-01",
+    "temporal_coverage_to": "2011-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:53:56.070512",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-04T00:00:00",
+        "revision_timestamp": "2014-01-06T08:55:26.088620",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/a5/dabd7ff5430ac0002b89b47ce4d04db46eff544ce00376c0ea68ea2a2b99d4.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "94-repartition-des-secteurs-d-activite-sur-l-ensemble-des-pays-30379437",
+    "notes": "Développement solidaire : Présentation stratégique du projet annuel de performances (Les orientations de la politique de l’immigration)",
+    "title": "94 - Répartition des secteurs d’activité sur l’ensemble des pays",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2011-01-01",
+    "temporal_coverage_to": "2012-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:48:56.874098",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-04T00:00:00",
+        "revision_timestamp": "2014-01-06T10:48:02.414302",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/8b/f39f1d1cd578a5a77e916f443a2b3465efd632defbb4e73ab12c48773587f7.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "08-visas-delivres-pour-l-etablissement-professionnel-551505",
+    "notes": "Politique de délivrance des visas : Evolution de la demande et de la délivrance de visas (Les orientations de la politique de l’immigration)",
+    "title": "08 - Visas délivrés pour l’établissement professionnel",
+    "territorial_coverage": "MetropoleOfCountry/FR/FRANCE METROPOLITAINE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2006-01-01",
+    "temporal_coverage_to": "2011-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T10:00:44.006234",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-05T00:00:00",
+        "revision_timestamp": "2014-01-06T09:13:46.685808",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/a8/9a4ca588364437103a4f5de5d0af6281594a1a018222853eb9b032362a452e.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "40-delits-a-la-police-des-etrangers-evolution-de-l-action-des-services-index-69-30379700",
+    "notes": "Immigration irrégulière : Le séjour irrégulier sur le territoire (Les orientations de la politique de l’immigration)",
+    "title": "40 - Délits à la police des étrangers – Évolution de l’action des services – index 69",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2008-01-01",
+    "temporal_coverage_to": "2011-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T10:07:11.544035",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-04T00:00:00",
+        "revision_timestamp": "2014-01-06T08:53:03.178002",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/fd/041ad771b81deed1740b72830f0377f010d6a9ecd299bd9c728c53bb9d80e8.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "22-nombre-d-accedants-a-la-nationalite-francaise-par-mariage-30379674",
+    "notes": "Admission au séjour : Analyse de l'immigration selon les motifs (Les orientations de la politique de l’immigration)",
+    "title": "22 - Nombre d’accédants à la nationalité française par mariage",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2006-01-01",
+    "temporal_coverage_to": "2011-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-04T14:54:01.719259",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-04T00:00:00",
+        "revision_timestamp": "2014-01-06T08:42:11.513405",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/99/3e9e66e693c99702d0eec91f4997789893e1c0c0af51b83ba7c0c58e12f471.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "29-nombre-de-visas-de-long-sejour-valant-titre-de-sejour-vls-ts-551525",
+    "notes": "Admission au séjour : Analyse de l'immigration selon le type de titre de séjour (Les orientations de la politique de l’immigration)",
+    "title": "29 - Nombre de visas de long séjour valant titre de séjour (VLS-TS)",
+    "territorial_coverage": "MetropoleOfCountry/FR/FRANCE METROPOLITAINE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2010-01-01",
+    "temporal_coverage_to": "2011-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T10:06:17.694096",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-05T00:00:00",
+        "revision_timestamp": "2014-01-06T09:46:02.888959",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/a6/b528c2ddca92447d8a8b60415089b81b75fb9318103d01efabf5873dc8add2.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "34-stock-de-titres-et-autorisations-provisoires-de-sejour-en-cours-de-validite-30379479",
+    "notes": "Admission au séjour : Analyse de l'immigration selon le type de titre de séjour (Les orientations de la politique de l’immigration)",
+    "title": "34 - Stock de titres et autorisations provisoires de séjour en cours de validité",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2006-01-01",
+    "temporal_coverage_to": "2011-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:45:12.421853",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-04T00:00:00",
+        "revision_timestamp": "2014-01-06T08:30:39.082461",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/8c/d2b5ec0b5bbeec89bcd6822aa8be75ca78a7167a2bb088e83ad2cf5c726930.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "ensemble-des-immigres-vivant-hors-menages-ordinaires-30379693",
+    "notes": "Atlas national des populations immigrées (PRIPI 2010 - 2012)",
+    "title": "Ensemble des immigrés vivant hors ménages ordinaires",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": null,
+    "temporal_coverage_to": null,
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:47:00.550308",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2011-12-05T00:00:00",
+        "revision_timestamp": "2014-01-06T09:41:20.611072",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/c3/e0ce46c2758d944527842b27508a407b7c16fc333771cdd929b5efe58ea2d0.xls"
+      },
+      {
+        "created": "2011-12-05T00:00:00",
+        "revision_timestamp": "2013-11-13T11:05:04.768717",
+        "name": "Télécharger Atlas national des populations immigrées",
+        "description": "",
+        "format": "",
+        "url": "http://www.immigration.gouv.fr/IMG/pdf/Atlas_national_PI_060711b.pdf"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "36-stock-de-titres-et-autorisations-provisoires-de-sejour-en-cours-de-validite-par-national-30379667",
+    "notes": "Admission au séjour : Analyse de l'immigration selon le type de titre de séjour (Les orientations de la politique de l’immigration)",
+    "title": "36 - Stock de titres et autorisations provisoires de séjour en cours de validité par nationalité",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2006-01-01",
+    "temporal_coverage_to": "2011-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:48:54.047440",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-04T00:00:00",
+        "revision_timestamp": "2014-01-06T09:24:52.577241",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/1b/a92a82e05077de4068680c101e0c9e90e523e0358a4fcc375d7bf787848374.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "acquisitions-de-la-nationalite-francaise-selon-la-nationalite-30379832",
+    "notes": "Acquisition de la nationalité française (DSED)",
+    "title": "Acquisitions de la nationalité française selon la nationalité",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "1999-01-01",
+    "temporal_coverage_to": "2009-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:57:06.430763",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2011-12-05T00:00:00",
+        "revision_timestamp": "2014-01-06T10:40:59.858005",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/84/9dcd065b4aa132928a982b0892e3e78351cfd7429cab35985ed702a2bf8537.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "61-nationalite-des-porteurs-de-faux-documents-551529",
+    "notes": "Immigration irrégulière : La lutte contre les fraudes à l'identité et à la fraude documentaire (Les orientations de la politique de l’immigration)",
+    "title": "61 - Nationalité des porteurs de faux documents",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2010-01-01",
+    "temporal_coverage_to": "2011-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:47:05.889351",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-05T00:00:00",
+        "revision_timestamp": "2014-01-06T10:42:23.751544",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/d4/3dfe0ee5a23150a0030b9de58cf094f770fe8a4a8bc1ab13db21dc14700d11.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "statut-d-occupation-du-logement-des-menages-immigres-et-non-immigres-30379739",
+    "notes": "Atlas national des populations immigrées (PRIPI 2010 - 2012)",
+    "title": "Statut d’occupation du logement des ménages immigrés et non immigrés",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": null,
+    "temporal_coverage_to": null,
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:47:54.136146",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2011-12-05T00:00:00",
+        "revision_timestamp": "2014-01-06T09:22:23.301144",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/e4/e71e191cd95461d32bb9f6284c15506f87e94dfdc9fcc5bb46c74c3ee84483.xls"
+      },
+      {
+        "created": "2011-12-05T00:00:00",
+        "revision_timestamp": "2013-11-13T11:05:41.313381",
+        "name": "Télécharger Atlas national des populations immigrées",
+        "description": "",
+        "format": "",
+        "url": "http://www.immigration.gouv.fr/IMG/pdf/Atlas_national_PI_060711b.pdf"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "13-evolution-du-nombre-d-ambassades-et-de-consulats-equipes-depuis-et-du-nombre-de-visas-biom-551513",
+    "notes": "Politique de délivrance des visas : Moyens et méthodes (Les orientations de la politique de l’immigration)",
+    "title": "13 - Evolution du nombre d’ambassades et de consulats équipés depuis et du nombre de visas biométriques délivrés",
+    "territorial_coverage": "MetropoleOfCountry/FR/FRANCE METROPOLITAINE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2005-01-01",
+    "temporal_coverage_to": "2011-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:57:19.533218",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-05T00:00:00",
+        "revision_timestamp": "2014-01-06T08:43:06.804785",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/10/510e1430b86e83522266406a89199adc2006817abe0e4625114ac53c148c5b.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "origine-geographique-des-acquerants-par-declaration-au-titre-du-mariage-30379732",
+    "notes": "Acquisition de la nationalité française (DSED)",
+    "title": "Origine géographique des acquérants par déclaration au titre du mariage",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "1995-01-01",
+    "temporal_coverage_to": "2009-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:59:29.617653",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2011-12-05T00:00:00",
+        "revision_timestamp": "2014-01-06T09:43:21.316941",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/05/308d19f95b941f3a580f098a781a9e07020c80a6ad9d3a68736c0ace2b4dd8.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "118-les-nouveaux-francais-selon-leur-origine-geographique-toutes-procedures-confondues-571499",
+    "notes": "Les acquisitions de la nationalité française : en 2010, le flux annuel des acquisitions de la nationalité française avec 143 275 nouveaux Français a connu une augmentation liée notamment aux acquisitions de la nationalité par le mariage. Ce flux reste très proche de la moyenne observée sur les dix dernières années (142 700). Au 1er janvier 2007, sur les 5,2 millions d’immigrés recensés dans la population française, 2,1 millions étaient des Français par acquisition.",
+    "title": "118 - Les nouveaux Français selon leur origine géographique, toutes procédures confondues",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "1998-01-01",
+    "temporal_coverage_to": "2009-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:52:32.038072",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2013-01-09T00:00:00",
+        "revision_timestamp": "2014-01-06T08:48:10.744383",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/1d/4af677a7225170b24be21fa32bd1e64daaedcfaf38c0bbfbf5130c8fa72a08.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "population-etrangere-activite-30379639",
+    "notes": "Atlas national des populations immigrées (PRIPI 2010 - 2012)",
+    "title": "Population étrangère : Activité",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": null,
+    "temporal_coverage_to": null,
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:47:38.074358",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2011-12-05T00:00:00",
+        "revision_timestamp": "2014-01-06T09:20:21.647406",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/78/10f4bf5c9a17b4e61b0cb0d49aba34c226522404edaddb0c9461ec0736756d.xls"
+      },
+      {
+        "created": "2011-12-05T00:00:00",
+        "revision_timestamp": "2013-11-13T11:05:24.049376",
+        "name": "Télécharger Atlas national des populations immigrées",
+        "description": "",
+        "format": "",
+        "url": "http://www.immigration.gouv.fr/IMG/pdf/Atlas_national_PI_060711b.pdf"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "statistiques-admissions-au-sejour-par-motif-30379430",
+    "notes": "Admission au séjour Titre de séjour (DSED)",
+    "title": "Statistiques admissions au sejour par motif",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2009-01-01",
+    "temporal_coverage_to": "2009-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:53:01.160813",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2011-12-05T00:00:00",
+        "revision_timestamp": "2014-01-06T08:52:24.524273",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/09/f12972e3151e954d899e4b29b99876996adb95fff9397da226bf007ca58626.xls"
+      }
+    ],
+    "related": [
+      {
+        "description": "Statistiques admissions au sejour par motif (Hors UE) 2009 - 2013",
+        "title": "Statistiques admissions au sejour par motif (Hors UE)",
+        "url": "http://cf.datawrapper.de/DZQoa/2/",
+        "created": "2013-11-28T17:32:48.176908",
+        "type": "visualization",
+        "image_url": "http://static.data.gouv.fr/ba/1bff2de2bd90eaec91e71d95ac2c98451201197477354f8bffbef999a12f8a.png"
+      }
+    ]
+  },
+  {
+    "name": "44-arretes-prefectoraux-de-reconduite-a-la-frontiere-et-obligations-de-quitter-le-territoir-30379553",
+    "notes": "Immigration irrégulière : Le séjour irrégulier sur le territoire (Les orientations de la politique de l’immigration)",
+    "title": "44 - Arrêtés préfectoraux de reconduite à la frontière et obligations de quitter le territoire non exécutés",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2008-01-01",
+    "temporal_coverage_to": "2011-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:46:36.429599",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-04T00:00:00",
+        "revision_timestamp": "2014-01-06T08:53:03.178002",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/30/6410ce2bf1337570b587108abf3b6c5ea3033946cf3205ad93365bf6829aa6.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "104-nombre-d-eloignements-realises-en-guadeloupe-30379503",
+    "notes": "Outre-mer : La situation migratoire (Les orientations de la politique de l’immigration)",
+    "title": "104 - Nombre d’éloignements réalisés en Guadeloupe",
+    "territorial_coverage": "RegionOfFrance/01/GUADELOUPE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2004-01-01",
+    "temporal_coverage_to": "2011-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-04T15:11:19.788042",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-04T00:00:00",
+        "revision_timestamp": "2014-01-06T09:16:24.838132",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/a7/fbec233819ba1a746724321aa14569eaeda6492e0322194f8986f4f5d7e834.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "97-population-etrangere-en-situation-reguliere-pays-tiers-30379459",
+    "notes": "Outre-mer immigration : Présentation générale (Les orientations de la politique de l’immigration)",
+    "title": "97 - Population étrangère en situation régulière (pays tiers)",
+    "territorial_coverage": "RegionOfFrance/01/GUADELOUPE,RegionOfFrance/02/MARTINIQUE,RegionOfFrance/03/GUYANE,RegionOfFrance/04/LA REUNION,RegionOfFrance/06/MAYOTTE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2010-01-01",
+    "temporal_coverage_to": "2011-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:58:04.845838",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-04T00:00:00",
+        "revision_timestamp": "2014-01-06T10:48:53.791417",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/65/e9d7977c0a4f30ec87b05938408e080032fd63f05620695e596fb56b52d7a7.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "37-nombre-de-refoulements-a-la-frontiere-30379642",
+    "notes": "Immigration irrégulière : Entrée irrégulière sur le territoire (Les orientations de la politique de l’immigration)",
+    "title": "37 - Nombre de refoulements à la frontière",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2006-01-01",
+    "temporal_coverage_to": "2011-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-04T15:10:20.390773",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-04T00:00:00",
+        "revision_timestamp": "2014-01-06T10:48:58.249288",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/c9/30f58f9cced2e305a2cc29a275a071d605323609e758031e7caca236ab42f0.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "77-principales-caracteristiques-des-signataires-du-cai-30379468",
+    "notes": "Intégration et l’acquisition de la nationalité française : Accueil et premiers pas dans la société française : le contrat d'accueil et d'intégration (Les orientations de la politique de l’immigration)",
+    "title": "77 - Principales caractéristiques des signataires du CAI",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2011-01-01",
+    "temporal_coverage_to": "2012-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:44:58.651496",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-04T00:00:00",
+        "revision_timestamp": "2014-01-06T09:27:21.451237",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/e4/f99cd9eee35b7bbd6dcf73d3ff3c711acd77af3d0295740a43fbde5d23c7ab.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "95-repartition-des-contributions-composante-developpement-local-du-pcuc-551550",
+    "notes": "Développement solidaire : Présentation stratégique du projet annuel de performances (Les orientations de la politique de l’immigration)",
+    "title": "95 - Répartition des contributions – composante développement local du PCUC",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2011-01-01",
+    "temporal_coverage_to": "2012-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T10:00:27.925584",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-18T00:00:00",
+        "revision_timestamp": "2014-01-06T09:23:46.835638",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/ff/9d4f3e59a859954b0ba613ac56cad5bef6a3050bb20ff10a5ab9749779369f.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "111-pourcentage-de-personnes-souhaitant-changer-de-logement-dans-la-deuxieme-annee-qui-suit-l-551570",
+    "notes": "La mobilité résidentielle des nouveaux migrants : les nouveaux migrants ayant obtenu en 2006 leur premier titre de séjour sont plus mobiles que les Français car ils souhaitent accéder rapidement à un logement personnel ou améliorer le confort de leur logement. Le fait de déménager permet souvent de quitter une situation critique. Un an après leur arrivée en France, les nouveaux migrants sont encore nombreux à vouloir déménager. Ce sont quelques uns des enseignements tirés de l’enquête \"Parcours et Profils des migrants\" menée par la DREES(1) en 2006 et 2007.",
+    "title": "111 - Pourcentage de personnes souhaitant changer de logement dans la deuxième année qui suit l'obtention du titre de séjour",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2011-01-01",
+    "temporal_coverage_to": "2011-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:59:26.860874",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2013-01-08T00:00:00",
+        "revision_timestamp": "2014-01-06T10:43:00.268617",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/ec/518a50b151cb356af9b403a69169c07cf58854d8316c28b7868af2bf08409f.xls"
+      },
+      {
+        "created": "2013-01-08T00:00:00",
+        "revision_timestamp": "2013-11-13T11:12:41.039524",
+        "name": "Consultation en ligne La mobilité résidentielle des nouveaux migrants",
+        "description": "",
+        "format": "",
+        "url": "http://www.immigration.gouv.fr/IMG/pdf/IM_21_022011.pdf"
+      }
+    ],
+    "related": [
+
+    ]
+  },
+  {
+    "name": "92-repartition-des-projets-par-pays-et-comparatif-551546",
+    "notes": "Développement solidaire : Présentation stratégique du projet annuel de performances (Les orientations de la politique de l’immigration)",
+    "title": "92 - Répartition des projets par pays et comparatif",
+    "territorial_coverage": "Country/FR/FRANCE",
+    "territorial_coverage_granularity": null,
+    "temporal_coverage_from": "2009-01-01",
+    "temporal_coverage_to": "2012-12-31",
+    "license_title": "Licence Ouverte / Open Licence",
+    "license_url": "http://www.data.gouv.fr/Licence-Ouverte-Open-Licence",
+    "revision_timestamp": "2013-09-05T09:58:36.582482",
+    "tags": [
+
+    ],
+    "groups": [
+      "societe"
+    ],
+    "resources": [
+      {
+        "created": "2012-04-05T00:00:00",
+        "revision_timestamp": "2014-01-06T09:34:55.207622",
+        "name": null,
+        "description": "",
+        "format": "XLS",
+        "url": "http://static.data.gouv.fr/e3/3430c8da0e11786b933e81c04bdcb84cb94d22e8738aa9054839893cd32473.xls"
+      }
+    ],
+    "related": [
+
+    ]
+  }
+]
