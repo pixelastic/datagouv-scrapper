@@ -11,3 +11,13 @@ The tool will generate json and csv file by requesting the CKAN API exposed by
 data.gouv.fr, ask for an organization, loop through all associated packages,
 request the api for each of these packages, loop through their associated items
 and aggregate all this data to form a nicely coherent list.
+
+## Fetching organization
+http://www.data.gouv.fr/api/3/action/organization_show?id=ministere-de-l-interieur
+
+## Fetching associated packages
+http://www.data.gouv.fr/api/3/action/package_show?id=les-polices-municipales-par-commune
+
+## Fetching associated items
+http://www.data.gouv.fr/api/3/action/related_list?id=les-polices-municipales-par-commune
+
