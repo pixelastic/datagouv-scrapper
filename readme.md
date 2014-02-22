@@ -12,6 +12,9 @@ data.gouv.fr, ask for an organization, loop through all associated packages,
 request the api for each of these packages, loop through their associated items
 and aggregate all this data to form a nicely coherent list.
 
+# Usage
+   $ ruby ./scrapper.rb ministere-de-l-interieur
+
 ## Fetching organization
 http://www.data.gouv.fr/api/3/action/organization_show?id=ministere-de-l-interieur
 
@@ -20,4 +23,7 @@ http://www.data.gouv.fr/api/3/action/package_show?id=les-polices-municipales-par
 
 ## Fetching associated items
 http://www.data.gouv.fr/api/3/action/related_list?id=les-polices-municipales-par-commune
+
+
+
 
