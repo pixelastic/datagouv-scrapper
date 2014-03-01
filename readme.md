@@ -16,13 +16,11 @@ and aggregate all this data to form a nicely coherent list.
    $ ruby ./scrapper.rb ministere-de-l-interieur
 
 ## Fetching organization
-http://www.data.gouv.fr/api/3/action/organization_show?id=ministere-de-l-interieur
+   http://qa.data.gouv.fr/api/1/datasets?organization=ministere-de-l-interieur
 
-## Fetching associated packages
-http://www.data.gouv.fr/api/3/action/package_show?id=les-polices-municipales-par-commune
+## Fetching a package
+  http://qa.data.gouv.fr/api/1/datasets/ce01b63a-63fc-4a00-a340-bcdec51e2035
 
-## Fetching associated items
-http://www.data.gouv.fr/api/3/action/related_list?id=les-polices-municipales-par-commune
 
 
 
